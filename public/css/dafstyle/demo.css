@@ -1,0 +1,115 @@
+/**
+ * DAF dafstyle
+ * @module demo
+ * @namespace daf-
+*/
+
+.daf-header{
+	display: block;
+	float: left;
+	width: 100%;
+	background-color: #ECF0F1 !important;
+	padding: 10px 0;
+	margin-bottom: 20px;
+}
+
+.daf-vew-gr{
+	background-color: #efefef;
+}
+
+
+.daf-footer{
+	display: block;
+	float: left;
+	width: 100%;
+	background-color: #ECF0F1 !important;
+	padding: 10px 0;
+	margin-top: 20px;
+}
+
+.title{
+	display: block;
+	float: left;
+	width: 100%;
+	font-size: 250%;
+	padding: 5px 0;
+	border-bottom: 1px solid #ECF0F1;
+	text-align: left;
+}
+.sub-title{
+	display: block;
+	float: left;
+	width: 100%;
+	font-size: 150%;
+	color: rgba(26, 188, 156, .5);
+	padding: 5px 0;
+	border-bottom: 1px solid rgba(26, 188, 156, .5);
+	text-align: left;
+}
+.row{
+	width: 25%;
+	margin: 0 auto;
+	display: inline-block;
+	float: left;
+	margin-bottom: 10px;
+}
+.row-2{
+	width: 75%;
+	margin: 0 auto;
+	display: inline-block;
+	float: left;
+	margin-bottom: 10px;
+}
+.row-3{
+	width: 100%;
+	margin: 0 auto;
+	display: inline-block;
+	float: left;
+	margin-bottom: 10px;
+}
+.line,
+.aline{
+	display: block;
+	float: left;
+	width: 70%;
+	font-size: 95%;
+	padding: 8px 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	background-color: transparent;
+}
+.line:hover{
+	background-color: #1ABC9C;
+	color: #fff;
+}
+.precode{
+	background-color: #EFEFEF;
+	border: 1px solid #ECF0F1;
+	display: block;
+	float: left;
+	width: 97.5%;
+	height: auto;
+	font-size: 95%;
+	padding: 10px;
+	border-radius: 3px;
+	cursor: pointer;
+	font-family: monospace, monospace;
+	margin: 5px 0;
+}
+.icode{
+	color: #E74C3C;
+}
+.succes{
+	width: 96.4%;
+} 
+.text-danger{
+	color: #E74C3C;
+}
+.demo-list{
+	width: 95%;
+}
+.aline{
+	width: 90%;
+	padding: 8px 10px 8px 0;
+	text-align: left;
+}

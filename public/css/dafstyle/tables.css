@@ -1,0 +1,41 @@
+/**
+ * DAF Base
+ * @module tables
+ * @namespace daf-
+ * @requires reset, base, fonts
+*/
+
+.daf-table{ border-collapse: collapse !important; }
+
+.daf-table td,
+.daf-table th{ background-color: #fff !important; }
+
+.daf-table{
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.daf-table > thead > tr > th,
+.daf-table > tbody > tr > th,
+.daf-table > tfoot > tr > th{
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #bbb;
+}
+
+.daf-table > thead > tr > th{
+    border-bottom: 2px solid #bbb;
+    text-align: left; 
+    vertical-align: bottom;
+	text-align: left;
+}
+	
+.daf-table tbody tr td,
+.daf-table tr td,
+.daf-table td{
+	padding: .5em;
+    line-height: 1.42857143;
+    border-bottom: 1px solid #ddd;
+}

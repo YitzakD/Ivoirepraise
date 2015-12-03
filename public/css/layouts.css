@@ -1,0 +1,14 @@
+.container{
+    margin-top: 20px;
+}
+
+.titro{
+    color: #fff;
+	background-color: #0099cc;
+    font-weight: bold;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}

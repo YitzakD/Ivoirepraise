@@ -1,0 +1,294 @@
+/**
+ * DAF Base
+ * @module grids
+ * @namespace daf-
+ * @requires reset, base
+*/
+
+/**
+ * La marge � gauhe et � droite est de 10px;
+ * La marge en bas est 10px;
+ * -----------------------------------------
+ * -----------------------------------------
+ * daf -> (voire plus haut)
+ * ctnr -> conteiner;
+ * gr -> grid;
+ * sct -> section;
+*/
+
+/**
+ * Grand conteneur;
+ * width : 1200px
+*/
+.daf-ctnr{
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	display: block;
+}
+
+/**
+ * Conteneur de ligne;
+ * max-width : 1200px
+*/
+.daf-gr-ctnr{
+	max-width: 1200px;
+	margin: 0 auto;
+	display: block;
+}
+
+.daf-gr-sct{
+	width: 100%;
+	display: block;
+	float: left;
+	margin-bottom: 20px;
+}
+
+/* Une grid dont la largeur est de 41px. */
+.daf-gr-1{
+	width: 41px;
+	display: inline-block;
+	float: left;
+	margin: 0 10px;
+	min-height: 40px;
+}
+
+/* Une grid dont la largeur est de 102px. */
+.daf-gr-2{
+	width: 102px;
+	display: inline-block;
+	float: left;
+	margin: 0 10px;
+	min-height: 40px;
+	height: auto;
+}
+
+/* Une grid dont la largeur est de 163px. */
+.daf-gr-3{
+	width: 163px;
+	display: inline-block;
+	float: left;
+	margin: 0 10px;
+	min-height: 40px;
+	height: auto;
+}
+
+/* Une grid dont la largeur est de 224px. */
+.daf-gr-4{
+	width: 224px;
+	display: inline-block;
+	float: left;
+	margin: 0 10px;
+	min-height: 40px;
+	height: auto;
+}
+
+/* Une grid dont la largeur est de 285px. */
+.daf-gr-5{
+	width: 285px;
+	display: inline-block;
+	float: left;
+	margin: 0 10px;
+	min-height: 40px;
+	height: auto;
+}
+
+/* Une grid dont la largeur est de 346px. */
+.daf-gr-6{
+	width: 346px;
+	display: inline-block;
+	float: left;
+	margin: 0 10px;
+	min-height: 40px;
+	height: auto;
+}
+
+/* Une grid dont la largeur est de 407px. */
+.daf-gr-7{
+	width: 407px;
+	display: inline-block;
+	float: left;
+	margin: 0 10px;
+	min-height: 40px;
+	height: auto;
+}
+
+/* Une grid dont la largeur est de 468px. */
+.daf-gr-8{
+	width: 468px;
+	display: inline-block;
+	float: left;
+	margin: 0 10px;
+	min-height: 40px;
+	height: auto;
+}
+
+/* Une grid dont la largeur est de 529px. */
+.daf-gr-9{
+	width: 529px;
+	display: inline-block;
+	float: left;
+	margin: 0 10px;
+	min-height: 40px;
+	height: auto;
+}
+
+/* Une grid dont la largeur est de 590px. */
+.daf-gr-10{
+	width: 590px;
+	display: inline-block;
+	float: left;
+	margin: 0 10px;
+	min-height: 40px;
+	height: auto;
+}
+
+/* Une section dont la largeur est de 651px. */
+.daf-sct-1{
+	width: 651px;
+	display: inline-block;
+	float: left;
+	margin: 0 10px;
+	min-height: 40px;
+	height: auto;
+}
+
+/* Une section dont la largeur est de 712px. */
+.daf-sct-2{
+	width: 712px;
+	display: inline-block;
+	float: left;
+	margin: 0 10px;
+	min-height: 40px;
+	height: auto;
+}
+
+/* Une section dont la largeur est de 773px. */
+.daf-sct-3{
+	width: 773px;
+	display: inline-block;
+	float: left;
+	margin: 0 10px;
+	min-height: 40px;
+	height: auto;
+}
+
+/* Une section dont la largeur est de 834px. */
+.daf-sct-4{
+	width: 834px;
+	display: inline-block;
+	float: left;
+	margin: 0 10px;
+	min-height: 40px;
+	height: auto;
+}
+
+/* Une section dont la largeur est de 895px. */
+.daf-sct-5{
+	width: 895px;
+	display: inline-block;
+	float: left;
+	margin: 0 10px;
+	min-height: 40px;
+	height: auto;
+}
+
+/* Une section dont la largeur est de 956px. */
+.daf-sct-6{
+	width: 956px;
+	display: inline-block;
+	float: left;
+	margin: 0 10px;
+	min-height: 40px;
+	height: auto;
+}
+
+/* Une section dont la largeur est de 1017px. */
+.daf-sct-7{
+	width: 1017px;
+	display: inline-block;
+	float: left;
+	margin: 0 10px;
+	min-height: 40px;
+	height: auto;
+}
+
+/* Une section dont la largeur est de 1078px. */
+.daf-sct-8{
+	width: 1078px;
+	display: inline-block;
+	float: left;
+	margin: 0 10px;
+	min-height: 40px;
+	height: auto;
+}
+
+/* Une section dont la largeur est de 1139px. */
+.daf-sct-9{
+	width: 1139px;
+	display: inline-block;
+	float: left;
+	margin: 0 10px;
+	min-height: 40px;
+	height: auto;
+}
+
+/* Une section dont la largeur est de 1200px. */
+.daf-sct-10{
+	width: 1200px;
+	display: inline-block;
+	float: left;
+	margin: 0 10px;
+	min-height: 40px;
+	height: auto;
+}
+
+/* permet d'annuler les marges pour les divs d'extr�mit�s � l'int�rieur des daf-gr-ctnr. */
+.daf-gr-1:first-child,
+.daf-gr-2:first-child,
+.daf-gr-3:first-child,
+.daf-gr-4:first-child,
+.daf-gr-5:first-child,
+.daf-gr-6:first-child,
+.daf-gr-7:first-child,
+.daf-gr-8:first-child,
+.daf-gr-9:first-child,
+.daf-gr-10:first-child,
+.daf-sct-1:first-child,
+.daf-sct-2:first-child,
+.daf-sct-3:first-child,
+.daf-sct-4:first-child,
+.daf-sct-5:first-child,
+.daf-sct-6:first-child,
+.daf-sct-7:first-child,
+.daf-sct-8:first-child,
+.daf-sct-9:first-child,
+.daf-sct-10:first-child{
+	margin-left: 0;
+}
+.daf-gr-1:last-child,
+.daf-gr-2:last-child,
+.daf-gr-3:last-child,
+.daf-gr-4:last-child,
+.daf-gr-5:last-child,
+.daf-gr-6:last-child,
+.daf-gr-7:last-child,
+.daf-gr-8:last-child,
+.daf-gr-9:last-child,
+.daf-gr-10:last-child,
+.daf-sct-1:last-child,
+.daf-sct-2:last-child,
+.daf-sct-3:last-child,
+.daf-sct-4:last-child,
+.daf-sct-5:last-child,
+.daf-sct-6:last-child,
+.daf-sct-7:last-child,
+.daf-sct-8:last-child,
+.daf-sct-9:last-child,
+.daf-sct-10:last-child{
+	margin-right: 0;
+}
+
+.both{
+	clear: both;
+}
