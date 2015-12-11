@@ -1,10 +1,7 @@
 <div class="daf-gr-ctnr container">
 <div class="daf-gr-sct">
     <div class="daf-sct-10">
-    <div class="alert titro">Ajouter une actualité</div>
-    <div class="alert alert-info">
-        Les balises HTML sont utilisable dans ce formulaire !
-    </div>
+    <div class="alert titro">Editer \ " <?= $music->titre; ?> "</div>
     <?php
     if($errors){
         if($errors === false){
@@ -23,17 +20,18 @@
     }
     ?>
     <form method="post" enctype="multipart/form-data">
-        <?= $form->input('titre', 'Titre de l\'actualité'); ?>
-        <?= $form->input('contenu', 'Contenu de l\'actualité', ['type' => 'textarea']); ?>
-        <?= $form->input('source', 'Source de l\'actualité'); ?>
+        <?= $form->input('titre', 'Titre du morceau'); ?>
+        <?= $form->select('album_hash', 'Album', $album); ?>
+        <?= $form->select('artiste_hash', 'Artiste', $artiste); ?>
+        <?= $form->input('apropos', 'A propos de ce morceau', ['type' => 'textarea']); ?>
+        <?= $form->input('fichier', 'Nouveau fichier musique', ['type' => 'file']); ?>
         <div class="form-group">
-            <label>Fichier de type image</label>
-            <input type="file" name="fichier[]" class="daf-form-ctrl" multiple />
+            <input type="hidden" name="hideName" value="<?= $music->fichier ?>">
         </div>
         <button class="btn btn-primary">Ajouter</button>
     </form>
     <br>
-    <a href="?p=admin.actus.index" class="btn-link">Retour</a>
+    <a href="?p=admin.musics.index" class="btn-link">Retour</a>
     </div>
 </div>
 </div>

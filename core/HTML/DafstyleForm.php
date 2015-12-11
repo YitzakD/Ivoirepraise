@@ -17,9 +17,11 @@ class DafstyleForm extends Form{
         $type = isset($option['type']) ? $option['type'] : 'text';
         $label = '<label>'. $label .'</label>';
         if($type === 'textarea'){
-            $input = '<textarea name="'. $name .'" class="daf-form-ctrl">'. $this->getValue($name) .'</textarea>';
+            $input = '<textarea name="' . $name . '" class="daf-form-ctrl" placeholder="' . ucfirst($name) . '">'. $this->getValue($name) .'</textarea>';
+        }elseif($type === 'file'){
+            $input = '<input type="' . $type . '" name="' . $name . '" class="daf-form-ctrl">';
         }else{
-            $input = '<input type="'. $type .'" name="'. $name .'" value="'. $this->getValue($name) .'" placeholder="'. ucfirst($name) .'" class="daf-form-ctrl">';
+            $input = '<input type="' . $type . '" name="' . $name . '" value="' . $this->getValue($name) . '" placeholder="' . ucfirst($name) . '" class="daf-form-ctrl">';
         }
 
         return $this->surround($label . $input);

@@ -12,3 +12,18 @@
     position: relative;
     z-index: 1;
 }
+
+.admin-cover{
+    width: 30px;
+}
+.admin-gallery{
+    width: 70px;
+}
+.admin-egallery{
+    width: 300px;
+    display: block;
+}
+.admin-evideo{
+    width: 500px;
+    display: block;
+}

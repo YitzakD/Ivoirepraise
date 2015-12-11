@@ -1,11 +1,11 @@
 <div class="daf-gr-ctnr container">
 <div class="daf-gr-sct">
     <div class="daf-sct-10">
-    <div class="alert titro">Editer - [ <?= $actus->titre; ?> ]</div>
+    <div class="alert titro">Editer l'interview - [ <?= strip_tags($interview->titre) ?> ]</div>
     <div class="alert alert-info">
         Les balises HTML sont utilisable dans ce formulaire !
     </div>
-    <?php
+    <?php   
     if($errors){
         if($errors === false){
             ?>
@@ -23,13 +23,13 @@
     }
     ?>
     <form method="post">
-        <?= $form->input('titre', 'Titre de l\'actualités'); ?>
-        <?= $form->input('contenu', 'Contenu de l\'actualité', ['type' => 'textarea']); ?>
-        <?= $form->input('source', 'Source de l\'actualité'); ?>
+        <?= $form->input('intro', 'Introduction', ['type' => 'textarea']); ?>
+        <?= $form->input('contenu', 'Contenu de l\'interview', ['type' => 'textarea']); ?>
+        <?= $form->input('resume', 'Résumé', ['type' => 'textarea']); ?>
         <button class="btn btn-primary">Editer</button>
     </form>
     <br>
-    <a href="?p=admin.actus.index" class="btn-link">Retour</a>
+    <a href="?p=admin.interviews.index" class="btn-link">Retour</a>
     </div>
 </div>
 </div>

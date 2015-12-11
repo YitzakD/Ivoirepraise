@@ -1,7 +1,7 @@
 <div class="daf-gr-ctnr container">
 <div class="daf-gr-sct">
     <div class="daf-sct-10">
-    <div class="alert titro">Editer - [ <?= $actus->titre; ?> ]</div>
+    <div class="alert titro">Ajouter un évenement</div>
     <div class="alert alert-info">
         Les balises HTML sont utilisable dans ce formulaire !
     </div>
@@ -22,14 +22,17 @@
         }
     }
     ?>
-    <form method="post">
-        <?= $form->input('titre', 'Titre de l\'actualités'); ?>
-        <?= $form->input('contenu', 'Contenu de l\'actualité', ['type' => 'textarea']); ?>
-        <?= $form->input('source', 'Source de l\'actualité'); ?>
-        <button class="btn btn-primary">Editer</button>
+    <form method="post" enctype="multipart/form-data">
+        <?= $form->input('titre', 'Titre de l\'événement'); ?>
+        <?= $form->input('contenu', 'Contenu de l\'événement', ['type' => 'textarea']); ?>
+        <div class="form-group">
+            <label>Fichier de type image</label>
+            <input type="file" name="fichier[]" class="daf-form-ctrl" multiple />
+        </div>
+        <button class="btn btn-primary">Ajouter</button>
     </form>
     <br>
-    <a href="?p=admin.actus.index" class="btn-link">Retour</a>
+    <a href="?p=admin.events.index" class="btn-link">Retour</a>
     </div>
 </div>
 </div>

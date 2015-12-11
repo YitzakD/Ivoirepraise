@@ -1,10 +1,7 @@
 <div class="daf-gr-ctnr container">
 <div class="daf-gr-sct">
     <div class="daf-sct-10">
-    <div class="alert titro">Ajouter une actualité</div>
-    <div class="alert alert-info">
-        Les balises HTML sont utilisable dans ce formulaire !
-    </div>
+    <div class="alert titro">Editer - [ <?= $movie->titre . ' - ' . $movie->artiste ?> }</div>
     <?php
     if($errors){
         if($errors === false){
@@ -22,18 +19,24 @@
         }
     }
     ?>
+
     <form method="post" enctype="multipart/form-data">
-        <?= $form->input('titre', 'Titre de l\'actualité'); ?>
-        <?= $form->input('contenu', 'Contenu de l\'actualité', ['type' => 'textarea']); ?>
-        <?= $form->input('source', 'Source de l\'actualité'); ?>
         <div class="form-group">
-            <label>Fichier de type image</label>
-            <input type="file" name="fichier[]" class="daf-form-ctrl" multiple />
+            <label>Video actuelle</label>
+            <?php $path = 'medias/movies/'; ?>
+            <video src="<?= $path . $movie->fichier ?>" controls class="admin-evideo"></video>
+        </div>
+        <?= $form->input('titre', 'Titre'); ?>
+        <?= $form->input('artiste', 'Nom de l\'artiste'); ?>
+        <?= $form->input('apropos', 'A propos', ['type' => 'textarea']); ?>
+        <?= $form->input('fichier', 'Nouveau fichier video', ['type' => 'file']); ?>
+        <div class="form-group">
+            <input type="hidden" name="hideName" value="<?= $movie->fichier ?>">
         </div>
         <button class="btn btn-primary">Ajouter</button>
     </form>
     <br>
-    <a href="?p=admin.actus.index" class="btn-link">Retour</a>
+    <a href="?p=admin.movies.index" class="btn-link">Retour</a>
     </div>
 </div>
 </div>

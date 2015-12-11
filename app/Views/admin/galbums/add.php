@@ -1,10 +1,7 @@
 <div class="daf-gr-ctnr container">
 <div class="daf-gr-sct">
     <div class="daf-sct-10">
-    <div class="alert titro">Editer - [ <?= $actus->titre; ?> ]</div>
-    <div class="alert alert-info">
-        Les balises HTML sont utilisable dans ce formulaire !
-    </div>
+    <div class="alert titro">Ajouter un album-photos</div>
     <?php
     if($errors){
         if($errors === false){
@@ -23,13 +20,12 @@
     }
     ?>
     <form method="post">
-        <?= $form->input('titre', 'Titre de l\'actualités'); ?>
-        <?= $form->input('contenu', 'Contenu de l\'actualité', ['type' => 'textarea']); ?>
-        <?= $form->input('source', 'Source de l\'actualité'); ?>
-        <button class="btn btn-primary">Editer</button>
+        <?= $form->input('titre', 'Titre de l\'album'); ?>
+        <?= $form->input('apropos', 'A propos de cet album', ['type' => 'textarea']); ?>
+        <button class="btn btn-primary">Ajouter</button>
     </form>
     <br>
-    <a href="?p=admin.actus.index" class="btn-link">Retour</a>
+    <a href="?p=admin.galbums.index" class="btn-link">Retour</a>
     </div>
 </div>
 </div>
